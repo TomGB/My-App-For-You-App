@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<access origin="http://www.myappforyou.co.uk" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		 <script type="text/javascript" src="cordova.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/RequestAnimationFrame.js"></script>
+		
+		
+		<title>My App For You</title>
+	</head>
+	<body class="main_body">
+		<div class="lightbox hidden">
+			<div name="delete" class="game_options">Delete Game</div>
+			<div name="report" class="game_options">Report Game</div>
+			<div name="cancel" class="game_options">Cancel</div>
+		</div>
+		<div class="input_area nodisplay"><input class="code_input"><span class="save_button">Submit</span></div>
+		<div class="report_area nodisplay">
+			<textarea maxlength="200" class="text_area">Reason: </textarea>
+			<div class "report_buttons">
+			<div name="sendReport" class="report_options">Report Game</div>
+			<div name="cancelReport" class="report_options">Back</div>
+			</div>
+		</div>
+		<div class="select_your_app">
+		    <div class="title_space">				
+		        <div class="mafy_icon"></div><h1 class="mafy_title">My App For You</h1><div class="mafy_menu"></div>
+		    </div>
+		</div>
+		<div class="add_app">
+		Enter app code
+		</div> 
+  	</body>
+</html>
